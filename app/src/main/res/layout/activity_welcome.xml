@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="none"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/ic_arrow_plane"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_passion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_welcome"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_arrow"
+            app:layout_constraintVertical_bias="0.207" />
+
+        <TextView
+            android:id="@+id/lbl_journey"
+            style="@style/textonboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Welcome to Journey"
+            android:textSize="@dimen/_26ssp"
+            app:layout_constraintEnd_toEndOf="@id/img_passion"
+            app:layout_constraintStart_toStartOf="@id/img_passion"
+            app:layout_constraintTop_toBottomOf="@+id/img_passion"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/btnTheme"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:includeFontPadding="false"
+            android:text="Sign in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_journey" />
+
+        <TextView
+            android:id="@+id/tvSkip"
+            style="@style/textDescriptionOnboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:clickable="true"
+            android:text="Sign up"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_next"
+            app:layout_constraintStart_toStartOf="@+id/btn_next"
+            app:layout_constraintTop_toBottomOf="@+id/btn_next" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

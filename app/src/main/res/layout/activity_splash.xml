@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.splash.SplashActivity">
+
+    <TextView
+        android:id="@+id/lbl_journey"
+        style="@style/textThemeLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Journey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/lbl_desc"
+        style="@style/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Master Your Plan, Master Your Life."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/lbl_journey"
+        app:layout_constraintStart_toStartOf="@id/lbl_journey"
+        app:layout_constraintTop_toBottomOf="@id/lbl_journey" />
+
+    <TextView
+        android:id="@+id/lbl_app_name"
+        style="@style/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By Affirme"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/lbl_journey"
+        app:layout_constraintStart_toStartOf="@id/lbl_journey"
+        app:layout_constraintTop_toBottomOf="@id/lbl_desc" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:backgroundTint="@color/main_color"
+        android:elevation="@dimen/_6sdp"
+        android:src="@drawable/ic_arrow"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_app_name"
+        app:layout_constraintVertical_bias="0.70" />
+</androidx.constraintlayout.widget.ConstraintLayout>

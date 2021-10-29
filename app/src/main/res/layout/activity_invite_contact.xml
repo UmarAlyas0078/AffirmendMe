@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_contact"
+    tools:context=".views.invitemember.InviteContactActivity">
+
+    <View
+        android:id="@+id/view_invite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_invite"
+        style="@style/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Invite Friends &amp; Family Members"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@id/view_invite"
+        app:layout_constraintStart_toStartOf="@id/view_invite"
+        app:layout_constraintTop_toTopOf="@id/view_invite"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <TextView
+        android:id="@+id/lbl_skip"
+        style="@style/txtSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:text="Skip"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@id/lbl_invite"
+        app:layout_constraintEnd_toEndOf="@+id/view_invite"
+        app:layout_constraintTop_toTopOf="@id/lbl_invite" />
+
+    <include
+        android:id="@+id/view_member"
+        layout="@layout/item_invite_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/view_invite"
+        app:layout_constraintStart_toStartOf="@+id/view_invite"
+        app:layout_constraintTop_toBottomOf="@+id/view_invite" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/lbl_note"
+        app:layout_constraintEnd_toEndOf="@id/view_member"
+        app:layout_constraintStart_toStartOf="@id/view_member"
+        app:layout_constraintTop_toBottomOf="@id/view_member"
+        app:navGraph="@navigation/user_flow_graph" />
+
+    <TextView
+        android:id="@+id/lbl_note"
+        style="@style/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_14sdp"
+        android:text="Note: "
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@id/btn_invite"
+        app:layout_constraintStart_toStartOf="@id/btn_invite"
+        app:layout_constraintTop_toBottomOf="@id/nav_host_fragment" />
+
+    <TextView
+        android:id="@+id/lbl_note_desc"
+        style="@style/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Add up tp 3 people!"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintBottom_toBottomOf="@id/lbl_note"
+        app:layout_constraintStart_toEndOf="@id/lbl_note"
+        app:layout_constraintTop_toTopOf="@id/lbl_note" />
+
+
+    <Button
+        android:id="@+id/btn_invite"
+        style="@style/btnTheme"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/bg_sigin_btn"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:text="Invite"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

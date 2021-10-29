@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AffirmedMe</string>
+    <string name="lbl_contact">Invite your friends and family to download the app to share your goals and motivate one another across the finish line.</string>
+    <string name="lbl_contact_two"> Let’s build a community centered around compl-
+    eting our goals. Remember there is great strength
+    in numbers and we perform better with a team
+    to help us through.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

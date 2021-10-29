@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_flow_graph.xml"
+    app:startDestination="@id/inviteMember">
+
+    <fragment
+        android:id="@+id/inviteMember"
+        android:name="com.example.affirmedme.views.fragments.inviteFragment.InviteMember"
+        android:label="InviteMember"
+        tools:layout="@layout/invite_member"/>
+    <fragment
+        android:id="@+id/inviteApp"
+        android:name="com.example.affirmedme.views.fragments.inviteFragment.InviteApp"
+        android:label="InviteApp"
+        tools:layout="@layout/invite_app">
+
+    </fragment>
+
+</navigation>

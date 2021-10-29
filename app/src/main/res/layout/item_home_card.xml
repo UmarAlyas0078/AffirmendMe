@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_180sdp"
+    android:backgroundTint="@color/black"
+    app:cardBackgroundColor="@color/black"
+    app:cardCornerRadius="@dimen/_20sdp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_jym"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lbl_affirm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="An hour or two before bed.."
+            android:textColor="@color/item_title_color"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_environment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Set the environment for \n restful Sleep"
+            android:textAlignment="center"
+            android:textColor="@color/item_title_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_affirm_title"
+            app:layout_constraintStart_toStartOf="@+id/lbl_affirm_title"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_affirm_title" />
+
+        <TextView
+            android:id="@+id/lbl_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Dim the lights. Ditch the phone.\nplay some smothing music."
+            android:textAlignment="center"
+            android:textColor="@color/item_title_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_affirm_title"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/lbl_affirm_title"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_environment" />
+
+        <TextView
+            android:id="@+id/lbl_mind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Prime the mind for efficient sleep."
+            android:textAlignment="center"
+            android:textColor="@color/item_title_color"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_affirm_title"
+            app:layout_constraintStart_toStartOf="@+id/lbl_affirm_title"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_light" />
+
+        <TextView
+            android:id="@+id/lbl_affirm"
+            style="@style/textThemeLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="Affirmed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toTopOf="@id/lbl_desc"
+            app:layout_constraintStart_toStartOf="@id/lbl_desc" />
+
+        <TextView
+            android:id="@+id/lbl_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Me"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@id/lbl_affirm"
+            app:layout_constraintStart_toEndOf="@id/lbl_affirm"
+            app:layout_constraintTop_toTopOf="@id/lbl_affirm" />
+
+        <TextView
+            android:id="@+id/lbl_desc"
+            style="@style/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:text="Master Your Plan, Master Your Life."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_6ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/lbl_affirm" />
+
+        <TextView
+            android:id="@+id/lbl_email"
+            style="@style/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:text="www.affirmed.com"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_6ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

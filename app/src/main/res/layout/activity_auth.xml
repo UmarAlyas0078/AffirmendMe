@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollIndicators="none"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/ic_arrow_plane"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_passion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_welcome"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_arrow"
+            app:layout_constraintVertical_bias="0.207" />
+
+        <TextView
+            android:id="@+id/lbl_journey"
+            style="@style/textonboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Welcome to Journey"
+            android:textSize="@dimen/_26ssp"
+            app:layout_constraintEnd_toEndOf="@id/img_passion"
+            app:layout_constraintStart_toStartOf="@id/img_passion"
+            app:layout_constraintTop_toBottomOf="@+id/img_passion"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/lbl_desc"
+            style="@style/textDescriptionOnboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="Enter phone number for verification"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/lbl_journey"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/lbl_journey"
+            app:layout_constraintTop_toBottomOf="@id/lbl_journey" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/edt_country_code_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center_vertical"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="true"
+            app:ccp_showNameCode="false"
+            app:layout_constraintStart_toStartOf="@+id/lbl_desc"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_desc" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            style="@style/textDescriptionOnboard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@null"
+            android:hint="Enter your phone  number"
+            android:inputType="number"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_country_code_picker"
+            app:layout_constraintEnd_toEndOf="@id/lbl_desc"
+            app:layout_constraintStart_toEndOf="@+id/edt_country_code_picker"
+            app:layout_constraintTop_toTopOf="@+id/edt_country_code_picker" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="0dp"
+            android:layout_height="1sp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@color/view_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_journey"
+            app:layout_constraintStart_toStartOf="@+id/lbl_journey"
+            app:layout_constraintTop_toBottomOf="@id/edt_country_code_picker" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

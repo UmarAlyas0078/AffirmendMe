@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <TextView
+        android:id="@+id/lbl_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Home"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_26ssp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Accountability Circle"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_home" />
+
+    <TextView
+        android:id="@+id/lbl_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Daily Affirmations"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_speaker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_circle" />
+
+    <TextView
+        android:id="@+id/lbl_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Requests"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_request"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_speaker" />
+
+    <TextView
+        android:id="@+id/lbl_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Settings"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_request" />
+
+    <TextView
+        android:id="@+id/lbl_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Logout"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_setting" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

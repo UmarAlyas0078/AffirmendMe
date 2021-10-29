@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="@dimen/_18sdp">
+
+    <TextView
+        android:id="@+id/lbl_goal_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_18sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:text="CHARACTER"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+</androidx.cardview.widget.CardView>

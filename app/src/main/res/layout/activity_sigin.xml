@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.sigin.SiginActivity">
+
+        <View
+            android:id="@+id/view_shape"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:background="@drawable/bg_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_affirm"
+            style="@style/textThemeLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:text="Affirmed"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/view_shape"
+            app:layout_constraintStart_toStartOf="@id/view_shape"
+            app:layout_constraintTop_toTopOf="@id/view_shape" />
+
+        <TextView
+            android:id="@+id/lbl_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Me"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintBottom_toBottomOf="@id/lbl_affirm"
+            app:layout_constraintStart_toEndOf="@id/lbl_affirm"
+            app:layout_constraintTop_toTopOf="@id/lbl_affirm" />
+
+        <TextView
+            android:id="@+id/lbl_desc"
+            style="@style/textDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Master Your Plan, Master Your Life."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="@id/lbl_me"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/lbl_affirm"
+            app:layout_constraintTop_toBottomOf="@id/lbl_me" />
+
+        <include
+            android:id="@+id/view_sign_in"
+            layout="@layout/view_signin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_desc" />
+
+
+        <TextView
+            android:id="@+id/lbl_signin"
+            style="@style/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginEnd="@dimen/_34sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="Don’t have an account?"
+            android:textColor="@color/lbl_signIn"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/view_sign_in"
+            app:layout_constraintStart_toStartOf="@id/view_sign_in"
+            app:layout_constraintTop_toBottomOf="@id/view_sign_in" />
+
+        <TextView
+            android:id="@+id/lbl_sign_up"
+            style="@style/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Sign Up"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@id/lbl_signin"
+            app:layout_constraintStart_toEndOf="@id/lbl_signin"
+            app:layout_constraintTop_toTopOf="@+id/lbl_signin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

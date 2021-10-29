@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_contact"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <include
+            android:id="@+id/view_banner"
+            layout="@layout/item_home_card"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_180sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Action Your Goals"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="@id/view_banner"
+            app:layout_constraintTop_toBottomOf="@id/view_banner" />
+
+        <TextView
+            android:id="@+id/lbl_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingEnd="@dimen/_4sdp"
+            android:text="See All"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_goal"
+            app:layout_constraintEnd_toEndOf="@id/view_banner"
+            app:layout_constraintTop_toTopOf="@id/lbl_goal" />
+
+        <TextView
+            android:id="@+id/lbl_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Instruction:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@id/lbl_goal"
+            app:layout_constraintTop_toBottomOf="@id/lbl_goal" />
+
+        <TextView
+            android:id="@+id/lbl_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingStart="@dimen/_6sdp"
+            android:text="Write your"
+            android:textColor="@color/lbl_signIn"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_intro"
+            app:layout_constraintStart_toEndOf="@id/lbl_intro"
+            app:layout_constraintTop_toTopOf="@id/lbl_intro" />
+
+        <TextView
+            android:id="@+id/lbl_goal_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/_2sdp"
+            android:text="GOALS and IDEAS and Action"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_write"
+            app:layout_constraintStart_toEndOf="@id/lbl_write"
+            app:layout_constraintTop_toTopOf="@id/lbl_write" />
+
+        <TextView
+            android:id="@+id/lbl_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="them. The chances of you completing your GOALS go up significantly if you write them."
+            android:textColor="@color/lbl_signIn"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@id/lbl_intro"
+            app:layout_constraintTop_toBottomOf="@id/lbl_goal_to" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_goals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_action"
+            app:layout_constraintStart_toStartOf="@id/lbl_action"
+            app:layout_constraintTop_toBottomOf="@id/lbl_action"
+            app:spanCount="2"
+            tools:listitem="@layout/itrem_goals" />
+
+        <TextView
+            android:id="@+id/lbl_modules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Modules"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="@id/rcv_goals"
+            app:layout_constraintTop_toBottomOf="@id/rcv_goals" />
+
+        <TextView
+            android:id="@+id/lbl_see_module"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingEnd="@dimen/_4sdp"
+            android:text="See All"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_modules"
+            app:layout_constraintEnd_toEndOf="@id/view_banner"
+            app:layout_constraintTop_toTopOf="@id/lbl_modules" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_modules"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_action"
+            app:layout_constraintStart_toStartOf="@id/lbl_modules"
+            app:layout_constraintTop_toBottomOf="@id/lbl_modules"
+            app:spanCount="2"
+            tools:listitem="@layout/itrem_goals" />
+
+        <TextView
+            android:id="@+id/lbl_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Reminders"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="@id/rcv_modules"
+            app:layout_constraintTop_toBottomOf="@id/rcv_modules" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
